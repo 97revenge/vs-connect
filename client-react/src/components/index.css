@@ -1,0 +1,236 @@
+p {
+  margin: 0;
+}
+
+.main-card {
+  position: relative;
+  width: 1198px;
+  height: 650px;
+  border-radius: 20px;
+  background-color: rgba(234, 228, 228, 0.35);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  top: 100px;
+}
+
+.card-content {
+  position: relative;
+  top: -500px;
+  left: 85px;
+  bottom: 150px;
+
+  width: 978.82px;
+  height: 535px;
+  border: 5px solid rgba(202, 215, 230, 1);
+  border-radius: 20px;
+  background-color: rgba(243, 240, 240, 0.75);
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"); */
+
+.nav {
+  position: relative;
+  display: flex;
+  width: 1279px;
+  height: 50px;
+  box-sizing: border-box;
+  align-items: center;
+  right: 35px;
+  top: 35px;
+}
+.navbar-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 1279px;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+.frame-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 140px;
+  height: 40px;
+  padding: 0px 26px 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-sizing: border-box;
+  background-color: rgba(74, 75, 138, 1);
+}
+.inicio {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  line-height: 18px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+}
+
+.frame-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 140px;
+  height: 40px;
+  padding: 0px 26px 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-sizing: border-box;
+  background-color: rgba(74, 75, 138, 1);
+}
+.servicos {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  line-height: 18px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 7600px;
+  width: fit-content;
+  height: 100%;
+}
+
+.frame-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 140px;
+  height: 40px;
+  padding: 0px 26px 5px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-sizing: border-box;
+  background-color: rgba(74, 75, 138, 1);
+}
+.cadastro {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  line-height: 18px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+}
+
+.frame-4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 140px;
+  height: 40px;
+  padding: 0px 26px 5px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-sizing: border-box;
+  background-color: rgba(74, 75, 138, 1);
+}
+.login {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  line-height: 18px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+}
+
+.space-between-logo {
+  padding: 0px 26px 5px;
+}
+
+.h-1-content {
+  position: relative;
+  bottom: 61rem;
+  left: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 761.3px;
+  height: 149.4px;
+  box-sizing: border-box;
+}
+
+.h-1-content > .h1-content-p {
+  position: relative;
+  top: 150px;
+  font-size: 25px;
+}
+.highlight-1 {
+  position: absolute;
+  top: 8.72%;
+  bottom: 84.86%;
+  left: 31.21%;
+  right: 19.13%;
+  width: 378.08px;
+  height: 35px;
+
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+}
+
+.highlight-2 {
+  position: absolute;
+  top: 57.87%;
+  bottom: 35.18%;
+  left: 24.76%;
+  right: 14.32%;
+  width: 402.88px;
+  height: 20px;
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+}
+
+.publique-nescessidade {
+  position: absolute;
+  top: 0%;
+  bottom: 34.41%;
+  left: 0%;
+  right: 17.22%;
+  color: rgba(0, 0, 0, 1);
+  font-size: 50px;
+  line-height: 49px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+}
+
+.button {
+  position: relative;
+  bottom: 850px;
+  left: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 268.05px;
+  height: 61.52px;
+  padding: 8px 24px;
+  border: 2px solid rgba(112, 113, 187, 1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: rgba(74, 75, 138, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.conecte-se {
+  color: rgba(255, 255, 255, 1);
+  font-size: 23px;
+  line-height: 23px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+}
+
+.icons-content {
+  position: relative;
+  bottom: 990px;
+  left: 550px;
+  width: 461.77px;
+  height: 202.14px;
+}
