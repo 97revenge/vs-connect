@@ -1,3 +1,8 @@
+.app {
+  position: relative;
+  left: 100px;
+}
+
 p {
   margin: 0;
 }
@@ -5,7 +10,7 @@ p {
 .main-card {
   position: relative;
   width: 1198px;
-  height: 650px;
+  height: 732.6px;
   border-radius: 20px;
   background-color: rgba(234, 228, 228, 0.35);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -13,37 +18,34 @@ p {
 }
 
 .card-content {
-  position: relative;
-  top: -500px;
-  left: 85px;
-  bottom: 150px;
-
+  position: absolute;
   width: 978.82px;
   height: 535px;
   border: 5px solid rgba(202, 215, 230, 1);
   border-radius: 20px;
   background-color: rgba(243, 240, 240, 0.75);
+  margin: 100px 0px 0px 100px;
 }
 
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"); */
 
 .nav {
-  position: relative;
   display: flex;
-  width: 1279px;
-  height: 50px;
+  width: 1440px;
+  height: 100%;
   box-sizing: border-box;
   align-items: center;
-  right: 35px;
-  top: 35px;
+  margin: 10px 10px 0px -50px;
+
+  /* top: 35px; */
 }
 .navbar-buttons {
   display: flex;
   flex-direction: row;
+  gap: 55px;
   width: 1279px;
   justify-content: space-around;
   box-sizing: border-box;
-  padding-right: 20px;
 }
 .frame-1 {
   display: flex;
@@ -60,7 +62,6 @@ p {
   background-color: rgba(74, 75, 138, 1);
 }
 .inicio {
-  color: rgba(255, 255, 255, 1);
   font-size: 18px;
   line-height: 18px;
   font-family: Inter, sans-serif;
@@ -141,20 +142,17 @@ p {
   font-weight: 700;
 }
 
-.space-between-logo {
-  padding: 0px 26px 5px;
-}
-
 .h-1-content {
+  display: flex;
   position: relative;
-  bottom: 61rem;
-  left: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   width: 761.3px;
   height: 149.4px;
+  left: 45px;
+  top: 45px;
   box-sizing: border-box;
 }
 
@@ -203,11 +201,11 @@ p {
 
 .button {
   position: relative;
-  bottom: 850px;
-  left: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+  left: 60px;
+  top: 60px;
   gap: 10px;
   width: 268.05px;
   height: 61.52px;
@@ -219,6 +217,77 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.more {
+  position: relative;
+  top: 70px;
+  left: 100px;
+  font-size: 10px;
+}
+
+.wobble-ver-left:hover {
+  -webkit-animation: wobble-ver-left 0.8s both;
+  animation: wobble-ver-left 0.8s both;
+}
+
+@-webkit-keyframes wobble-ver-left:hover {
+  0%,
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateY(-30px) rotate(-6deg);
+    transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateY(15px) rotate(6deg);
+    transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateY(-15px) rotate(-3.6deg);
+    transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateY(9px) rotate(2.4deg);
+    transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateY(-6px) rotate(-1.2deg);
+    transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-ver-left {
+  0%,
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateY(-30px) rotate(-6deg);
+    transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateY(15px) rotate(6deg);
+    transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateY(-15px) rotate(-3.6deg);
+    transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateY(9px) rotate(2.4deg);
+    transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateY(-6px) rotate(-1.2deg);
+    transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+
 .conecte-se {
   color: rgba(255, 255, 255, 1);
   font-size: 23px;
@@ -227,10 +296,97 @@ p {
   font-weight: 700;
 }
 
-.icons-content {
+.profile-home {
+  display: flex;
   position: relative;
-  bottom: 990px;
-  left: 550px;
-  width: 461.77px;
-  height: 202.14px;
+  background-color: transparent;
+  top: 170px;
+  width: 900px;
+  aligh-items: flex-start;
+  box-shadow: 15px;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+.icons-content {
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  left: 470px;
+  weight: 1000px;
+}
+
+.thought-bubble {
+  display: inline;
+  position: relative;
+  width: 70.31px;
+  height: 70.31px;
+  bottom: 40px;
+  left: 400px;
+}
+
+.jello-horizontal:hover {
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+}
+
+@-webkit-keyframes jello-horizontal:hover {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
