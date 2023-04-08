@@ -27,9 +27,9 @@
 ## **Roteiro de desenvolvimento**
 
 - [x]   1.0.0 | main  setup 
-- []  1.0.1 | dev setup 
-- []  1.0.2 | dev-template-engine setup 
-- []  1.0.3 | dev-react setup 
+- [x]  1.0.1 | client setup 
+- [x]  1.0.2 | client-template-engine setup 
+- [x]  1.0.3 | client-react setup 
  > Use o comando ``gitk`` para analisar melhor
 
 
