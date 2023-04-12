@@ -1,4 +1,6 @@
+import Services from "./Services";
 import "./index.css";
+import { useTranslation, initReactI18next } from "react-i18next";
 
 const aboutTexts = {
   Button: "Conecte-se ! ",
@@ -58,6 +60,17 @@ const Button = (props) => {
 };
 
 const H1Content = () => {
+  // i18next.use(initReactI18next).init({
+  //   resources: {
+  //     en: {
+  //       translation: {
+
+  //       },
+  //     },
+  //   },
+  // });
+  // const { t } = userTranslation();
+
   return (
     <div className="h-1-content">
       <p className="publique-nescessidade">
@@ -94,6 +107,7 @@ const CardContent = () => {
     <>
       <div className="card-content">
         <H1Content />
+
         <IconsContent />
         <Button conect={Object.values(aboutTexts.Button)} />
       </div>
@@ -106,34 +120,22 @@ const Nav = () => {
       <div className="navbar-buttons">
         <div className="frame-1">
           <h1 className="inicio">
-            <a href="./inicio">
-              inicio
-              {console.log(window.location)}
-            </a>
+            <a href={<Home />}>inicio</a>
           </h1>
         </div>
         <div className="frame-2">
           <h1 className="servicos">
-            <a href="./servicos">
-              servicos
-              {console.log(window.location)}
-            </a>
+            <a href={<Services />}>servicos</a>
           </h1>
         </div>
         <div className="frame-3">
           <h1 className="cadastro">
-            <a href="./cadastro">
-              cadastro
-              {console.log(window.location)}
-            </a>
+            <a href="./cadastro">cadastro</a>
           </h1>
         </div>
         <div className="frame-4">
           <h1 className="login">
-            <a href="./login">
-              login
-              {console.log(window.location)}
-            </a>
+            <a href="./login">login</a>
           </h1>
         </div>
       </div>
