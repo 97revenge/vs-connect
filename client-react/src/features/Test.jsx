@@ -2,9 +2,10 @@ import i18next from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
 import enTranslation from "../../locales/en/entranslation.json";
 import ptTranslation from "../../locales/pt/pttranslation.json";
-// import LanguageDetector from "i18next-browser-languagedetector";
+import LanguageDetector from "i18next-browser-languagedetector";
+
 i18next
-  // .use(LanguageDetector)
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     supportedLngs: ["pt", "en"],
@@ -17,6 +18,19 @@ i18next
       },
       pt: {
         translation: ptTranslation,
+      },
+      detection: {
+        // permite que eu escolha de quais formas eu irei detectar traducoes .
+        order: [
+          "htmlTag",
+          "querystring",
+          "cookie",
+          "localStorage",
+          "sessionStorage",
+          "navigator",
+          "path",
+          "subdomain",
+        ],
       },
     },
   });
