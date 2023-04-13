@@ -30,8 +30,6 @@ const valueTexts = {
   },
 };
 
-const result = valueTexts.parse();
-
 i18next.use(initReactI18next).init({
   resources: {
     en: {

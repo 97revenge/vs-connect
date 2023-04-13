@@ -1,6 +1,5 @@
 import Services from "./Services";
 import "./index.css";
-import { useTranslation, initReactI18next } from "react-i18next";
 
 const aboutTexts = {
   Button: "Conecte-se ! ",
