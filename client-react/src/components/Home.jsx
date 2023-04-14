@@ -59,17 +59,6 @@ const Button = (props) => {
 };
 
 const H1Content = () => {
-  // i18next.use(initReactI18next).init({
-  //   resources: {
-  //     en: {
-  //       translation: {
-
-  //       },
-  //     },
-  //   },
-  // });
-  // const { t } = userTranslation();
-
   return (
     <div className="h-1-content">
       <p className="publique-nescessidade">
