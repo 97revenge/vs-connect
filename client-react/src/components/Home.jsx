@@ -1,3 +1,6 @@
+import i18nextProvider, { callbackStatic } from "../features/i18nextProvider";
+import enHomeTranslation from "../../locales/en/enHomeTranslation.json";
+import ptHomeTranslation from "../../locales/pt/ptHomeTranslation.json";
 import Services from "./Services";
 import "./index.css";
 
@@ -14,6 +17,8 @@ const aboutTexts = {
     ],
   },
 };
+
+i18nextProvider(enHomeTranslation, ptHomeTranslation);
 
 const IconsContent = () => {
   return (
@@ -44,11 +49,11 @@ const IconsContent = () => {
   );
 };
 
-const Button = (props) => {
+const Button = () => {
   return (
     <div>
       <button className="button  wobble-ver-left">
-        <p className="conecte-se">{props.conect}</p>
+        <p className="conecte-se">{callbackStatic("Button")}</p>
       </button>
       <p className="more">
         Conheca mais sobre em <strong>blablabla.com</strong>
@@ -97,7 +102,7 @@ const CardContent = () => {
         <H1Content />
 
         <IconsContent />
-        <Button conect={Object.values(aboutTexts.Button)} />
+        <Button />
       </div>
     </>
   );
