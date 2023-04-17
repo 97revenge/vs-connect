@@ -56,8 +56,14 @@ const Button = () => {
         <p className="conecte-se">{callbackStatic("Button")}</p>
       </button>
       <p className="more">
-        Conheca mais sobre em <strong>blablabla.com</strong>
-        <link rel="stylesheet" href={aboutTexts.moreLink} />
+        {callbackStatic("more")}
+        <strong>
+          <link
+            rel="stylesheet"
+            href="https://www.figma.com/file/6khinzowdFkFD1ikyQNawW/VS-Connect-by-Matheus-Henrique?node-id=1-2&t=NzZOCXGkSUpsEfNK-0"
+          />
+          <u>@vs-connect</u>{" "}
+        </strong>
       </p>
     </div>
   );
@@ -67,19 +73,20 @@ const H1Content = () => {
   return (
     <div className="h-1-content">
       <p className="publique-nescessidade">
-        {aboutTexts.H1Content.firstText[0]}
+        {callbackStatic("H1Content.firstText.0")}
         <strong className="anima wobble-hor-bottom">
-          {aboutTexts.H1Content.firstText[1]}
+          {callbackStatic("H1Content.firstText.1")}
         </strong>
-        {aboutTexts.H1Content.firstText[2]} {aboutTexts.H1Content.secondText[0]}
+        {callbackStatic("H1Content.firstText.2")}{" "}
+        {callbackStatic("H1Content.secondText.0")}
         <strong className="anima wobble-hor-bottom">
           {aboutTexts.H1Content.secondText[1]}
         </strong>
-        {aboutTexts.H1Content.secondText[2]}
+        {callbackStatic("H1Content.secondText.2")}
       </p>
       <p className="h1-content-p">
-        {aboutTexts.H1Content.paragraphContent[0]}
-        <strong>{aboutTexts.H1Content.paragraphContent[1]}</strong>{" "}
+        {callbackStatic("H1Content.paragraphContent.0")}
+        <strong>{callbackStatic("H1Content.paragraphContent.1")}</strong>{" "}
       </p>
       <img
         src="https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/w2q3hk7k6v-58%3A53?alt=media&token=54c7f297-7737-44ce-bb4b-be0d3945894a"
@@ -113,22 +120,22 @@ const Nav = () => {
       <div className="navbar-buttons">
         <div className="frame-1">
           <h1 className="inicio">
-            <a href={<Home />}>inicio</a>
+            <a href={<Home />}>{callbackStatic("inicio")}</a>
           </h1>
         </div>
         <div className="frame-2">
           <h1 className="servicos">
-            <a href={<Services />}>servicos</a>
+            <a href={<Services />}>{callbackStatic("servicos")}</a>
           </h1>
         </div>
         <div className="frame-3">
           <h1 className="cadastro">
-            <a href="./cadastro">cadastro</a>
+            <a href="./cadastro">{callbackStatic("cadastro")}</a>
           </h1>
         </div>
         <div className="frame-4">
           <h1 className="login">
-            <a href="./login">login</a>
+            <a href="./login">{callbackStatic("Loggin")}</a>
           </h1>
         </div>
       </div>

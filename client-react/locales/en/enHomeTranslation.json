@@ -1,6 +1,8 @@
 {
-  "Button": "start using ! ",
-  "moreLink": "https://www.figma.com/file/6khinzowdFkFD1ikyQNawW/VS-Connect-by-Matheus-Henrique?node-id=1-2&t=NzZOCXGkSUpsEfNK-0",
+  "inicio": "home",
+  "servicos": "services",
+  "login": "Login",
+  "cadastro": "register",
   "H1Content": {
     "firstText": ["publish", "=", "needs"],
     "secondText": ["Find", "=", "developers"],
@@ -8,5 +10,8 @@
       " If you have an idea, a company, an application, an art or a business...",
       "Your place is here !"
     ]
-  }
+  },
+  "Button": "start using ! ",
+  "moreLink": "https://www.figma.com/file/6khinzowdFkFD1ikyQNawW/VS-Connect-by-Matheus-Henrique?node-id=1-2&t=NzZOCXGkSUpsEfNK-0",
+  "more": "look for more in"
 }
