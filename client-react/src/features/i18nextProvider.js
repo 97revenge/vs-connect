@@ -7,7 +7,7 @@ import ptTranslation from "../../locales/pt/pttranslation.json";
 export const callbackStatic = (value) => {
   const { t } = useTranslation();
   const result = t(value);
-  return result;
+  return typeof value == "string" && result;
 };
 
 export default function i18nextProvider(

@@ -4,20 +4,6 @@ import ptHomeTranslation from "../../locales/pt/ptHomeTranslation.json";
 import Services from "./Services";
 import "./index.css";
 
-const aboutTexts = {
-  Button: "Conecte-se ! ",
-  moreLink:
-    "https://www.figma.com/file/6khinzowdFkFD1ikyQNawW/VS-Connect-by-Matheus-Henrique?node-id=1-2&t=NzZOCXGkSUpsEfNK-0",
-  H1Content: {
-    firstText: ["Publique", "=", "Nescessidades"],
-    secondText: ["Encontre", "=", "Desenvolvedores"],
-    paragraphContent: [
-      "Se você tem uma idéia, uma empresa , um aplicativo, uma arte ou um negócio...",
-      "O seu lugar é aqui !",
-    ],
-  },
-};
-
 i18nextProvider(enHomeTranslation, ptHomeTranslation);
 
 const IconsContent = () => {
@@ -80,7 +66,7 @@ const H1Content = () => {
         {callbackStatic("H1Content.firstText.2")}{" "}
         {callbackStatic("H1Content.secondText.0")}
         <strong className="anima wobble-hor-bottom">
-          {aboutTexts.H1Content.secondText[1]}
+          {callbackStatic("H1Content.secondText.1")}
         </strong>
         {callbackStatic("H1Content.secondText.2")}
       </p>
@@ -114,14 +100,16 @@ const CardContent = () => {
     </>
   );
 };
-const Nav = () => {
+const Nav = (props) => {
   return (
     <div className="nav">
       <div className="navbar-buttons">
         <div className="frame-1">
-          <h1 className="inicio">
-            <a href={<Home />}>{callbackStatic("inicio")}</a>
-          </h1>
+          <button onClick={props.value}>
+            <h1 className="inicio ">
+              <a href={<Home />}>{callbackStatic("inicio")}</a>
+            </h1>
+          </button>
         </div>
         <div className="frame-2">
           <h1 className="servicos">
@@ -157,7 +145,7 @@ export default function Home() {
   return (
     <>
       <div className="app">
-        <Nav />
+        <Nav value={window.location.href} />
         <MainCard />
       </div>
     </>
