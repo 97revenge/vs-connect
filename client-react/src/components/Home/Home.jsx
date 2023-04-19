@@ -1,9 +1,12 @@
-import i18nextProvider, { callbackStatic } from "../features/i18nextProvider";
-import enHomeTranslation from "../../locales/en/enHomeTranslation.json";
-import ptHomeTranslation from "../../locales/pt/ptHomeTranslation.json";
-import Services from "./Services";
+import i18nextProvider, {
+  callbackStatic,
+} from "../../features/i18nextProvider";
+import enHomeTranslation from "../../../locales/en/enHomeTranslation.json";
+import ptHomeTranslation from "../../../locales/pt/ptHomeTranslation.json";
+import Services from "../Services/Services";
 import "./index.css";
-
+import "./index.css";
+// import {Link} from "./tiger-router"
 i18nextProvider(enHomeTranslation, ptHomeTranslation);
 
 const IconsContent = () => {
@@ -104,13 +107,7 @@ const Nav = (props) => {
   return (
     <div className="nav">
       <div className="navbar-buttons">
-        <div className="frame-1">
-          <button onClick={props.value}>
-            <h1 className="inicio ">
-              <a href={<Home />}>{callbackStatic("inicio")}</a>
-            </h1>
-          </button>
-        </div>
+        <div className="frame-1"></div>
         <div className="frame-2">
           <h1 className="servicos">
             <a href={<Services />}>{callbackStatic("servicos")}</a>
@@ -142,10 +139,11 @@ const MainCard = () => {
 };
 
 export default function Home() {
+  const frameValue = "#4a4b8a";
   return (
     <>
       <div className="app">
-        <Nav value={window.location.href} />
+        <Nav value={window.location.href} frameNumber={frameValue} />
         <MainCard />
       </div>
     </>
