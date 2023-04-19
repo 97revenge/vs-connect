@@ -2,15 +2,17 @@ import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import Services from "./components/Services/Services";
+import Error from "./components/Error/Error";
+
 import { Router, Route } from "tiger-router";
 
 function App() {
   return (
-    <Router>
-      <route path="/" exact component={Home} />
-      <Route path="/services" component={Services} />
-      <Route path="/register" component={Register} />
-      <Route path="/login" component={Login} />
+    <Router defaultComponent={Error}>
+      <Route path="/home" Component={Home} />
+      <Route path="/services" Component={Services} />
+      <Route path="/register" Component={Register} />
+      <Route path="/login" Component={Login} />
     </Router>
 
     // <>

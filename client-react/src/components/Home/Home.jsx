@@ -6,7 +6,7 @@ import ptHomeTranslation from "../../../locales/pt/ptHomeTranslation.json";
 import Services from "../Services/Services";
 import "./index.css";
 import "./index.css";
-// import {Link} from "./tiger-router"
+import { Link } from "tiger-router";
 i18nextProvider(enHomeTranslation, ptHomeTranslation);
 
 const IconsContent = () => {
@@ -107,7 +107,11 @@ const Nav = (props) => {
   return (
     <div className="nav">
       <div className="navbar-buttons">
-        <div className="frame-1"></div>
+        <div className="frame-1">
+          <h1 className="inicio">
+            <Link to="/home">Home</Link>
+          </h1>
+        </div>
         <div className="frame-2">
           <h1 className="servicos">
             <a href={<Services />}>{callbackStatic("servicos")}</a>
