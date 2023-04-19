@@ -91,7 +91,7 @@ const H1Content = () => {
   );
 };
 
-const CardContent = () => {
+export const CardContent = () => {
   return (
     <>
       <div className="card-content">
@@ -103,7 +103,7 @@ const CardContent = () => {
     </>
   );
 };
-const Nav = (props) => {
+export const Nav = (props) => {
   return (
     <div className="nav">
       <div className="navbar-buttons">
@@ -132,7 +132,7 @@ const Nav = (props) => {
   );
 };
 
-const MainCard = () => {
+export const MainCard = () => {
   return (
     <>
       <div className="main-card">
@@ -147,7 +147,7 @@ export default function Home() {
   return (
     <>
       <div className="app">
-        <Nav value={window.location.href} frameNumber={frameValue} />
+        <Nav />
         <MainCard />
       </div>
     </>

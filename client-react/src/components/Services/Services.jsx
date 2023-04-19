@@ -1,4 +1,5 @@
 import "./index.css";
+import { Nav } from "../Home/Home";
 
 const CardContent = () => {
   return (
@@ -21,7 +22,10 @@ const MainCard = () => {
 export default function Services() {
   return (
     <>
-      <MainCard />
+      <div className="app">
+        <Nav />
+        <MainCard />
+      </div>
     </>
   );
 }
