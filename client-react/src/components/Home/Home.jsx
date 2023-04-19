@@ -109,22 +109,22 @@ export const Nav = (props) => {
       <div className="navbar-buttons">
         <div className="frame-1">
           <h1 className="inicio">
-            <Link to="/home">Home</Link>
+            <Link to="/home">{callbackStatic("inicio")}</Link>
           </h1>
         </div>
         <div className="frame-2">
           <h1 className="servicos">
-            <a href={<Services />}>{callbackStatic("servicos")}</a>
+            <Link to="/services">{callbackStatic("services")}</Link>
           </h1>
         </div>
         <div className="frame-3">
           <h1 className="cadastro">
-            <a href="./cadastro">{callbackStatic("cadastro")}</a>
+            <Link to="/register">{callbackStatic("register")}</Link>
           </h1>
         </div>
         <div className="frame-4">
           <h1 className="login">
-            <a href="./login">{callbackStatic("Loggin")}</a>
+            <Link to="/Login">{callbackStatic("Loggin")}</Link>
           </h1>
         </div>
       </div>
@@ -143,7 +143,6 @@ export const MainCard = () => {
 };
 
 export default function Home() {
-  const frameValue = "#4a4b8a";
   return (
     <>
       <div className="app">

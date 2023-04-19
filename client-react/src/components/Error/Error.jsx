@@ -1,32 +1,13 @@
 import "./index.css";
-
-const CardContent = () => {
-  return (
-    <>
-      <div className="card-content">
-        <p>
-          <strong>Erro 404...</strong>
-        </p>
-      </div>
-    </>
-  );
-};
-
-const MainCard = () => {
-  return (
-    <>
-      <div className="main-card">
-        <CardContent />
-      </div>
-    </>
-  );
-};
+import { Nav } from "../Home/Home";
+import Scaffold from "../../features/Scaffold";
 
 export default function Error() {
   return (
     <>
       <div>
-        <MainCard />
+        <Nav />
+        <Scaffold />
       </div>
     </>
   );

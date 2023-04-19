@@ -1,20 +1,18 @@
 import "./index.css";
-import { Nav } from "../Home/Home";
+// import Scaffold from "../../features/Scaffold";
 
-const CardContent = () => {
+const RegisterCardContent = () => {
   return (
     <>
-      <div className="card-content"></div>
+      <div className="new-card-content">ok</div>
     </>
   );
 };
 
-const MainCard = () => {
+const RegisterNav = () => {
   return (
     <>
-      <div className="main-card">
-        <CardContent />
-      </div>
+      <div className="new-nav"></div>
     </>
   );
 };
@@ -22,9 +20,11 @@ const MainCard = () => {
 export default function Register() {
   return (
     <>
-      <div className="app">
-        <Nav />
-        <MainCard />
+      <div>
+        <RegisterNav />
+      </div>
+      <div>
+        <RegisterCardContent />
       </div>
     </>
   );
