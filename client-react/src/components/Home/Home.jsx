@@ -3,7 +3,6 @@ import i18nextProvider, {
 } from "../../features/i18nextProvider";
 import enHomeTranslation from "../../../locales/en/enHomeTranslation.json";
 import ptHomeTranslation from "../../../locales/pt/ptHomeTranslation.json";
-import Services from "../Services/Services";
 import "./index.css";
 import "./index.css";
 import { Link } from "tiger-router";
@@ -114,17 +113,17 @@ export const Nav = (props) => {
         </div>
         <div className="frame-2">
           <h1 className="servicos">
-            <Link to="/services">{callbackStatic("services")}</Link>
+            <Link to="/services">{callbackStatic("servicos")}</Link>
           </h1>
         </div>
         <div className="frame-3">
           <h1 className="cadastro">
-            <Link to="/register">{callbackStatic("register")}</Link>
+            <Link to="/register">{callbackStatic("cadastro")}</Link>
           </h1>
         </div>
         <div className="frame-4">
           <h1 className="login">
-            <Link to="/Login">{callbackStatic("Loggin")}</Link>
+            <Link to="/Login">{callbackStatic("login")}</Link>
           </h1>
         </div>
       </div>

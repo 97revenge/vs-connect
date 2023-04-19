@@ -6,8 +6,10 @@ export default function Error() {
   return (
     <>
       <div>
-        <Nav />
         <Scaffold />
+        <div>
+          <strong>Erro 404...</strong>
+        </div>
       </div>
     </>
   );
