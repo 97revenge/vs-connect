@@ -102,7 +102,7 @@ export const CardContent = () => {
     </>
   );
 };
-export const Nav = (props) => {
+export const Nav = () => {
   return (
     <div className="nav">
       <div className="navbar-buttons">

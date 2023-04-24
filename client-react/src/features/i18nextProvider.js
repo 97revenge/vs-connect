@@ -1,8 +1,6 @@
 import i18next from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next, useTranslation } from "react-i18next";
-import enTranslation from "../../locales/en/entranslation.json";
-import ptTranslation from "../../locales/pt/pttranslation.json";
 
 export const callbackStatic = (value) => {
   const { t } = useTranslation();
@@ -10,10 +8,7 @@ export const callbackStatic = (value) => {
   return typeof value == "string" && result;
 };
 
-export default function i18nextProvider(
-  enParams = enTranslation,
-  ptParams = ptTranslation
-) {
+export default function i18nextProvider(enParams, ptParams) {
   const provider = i18next
     .use(LanguageDetector)
     .use(initReactI18next)
