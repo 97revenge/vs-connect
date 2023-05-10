@@ -4,7 +4,7 @@
 
 ![image](https://github.com/97revenge/vs-connect/assets/80254945/cc817514-c6b9-45e9-8b9d-c2d9cc3ca65c)
 
-## **Roteiro de desenvolvimento**
+## **development roadmap**
 
 - [x]   1.0.0 | main  setup 
 - [x]  1.0.1 | dev setup 
