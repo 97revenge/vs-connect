@@ -1,7 +1,9 @@
 const CardContent = () => {
   return (
     <>
-      <div className="card-content"></div>
+      <div className="card-content">
+        <div></div>
+      </div>
     </>
   );
 };
