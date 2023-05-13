@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./index.css";
 
 const CardGroupRight = () => {
@@ -108,15 +108,27 @@ const SurfDog = () => {
 const Form = ({ init, mid, low, extra }) => {
   const value = [init, mid, low, extra];
 
-  const result = value.map((item) => {
+  const anotherResult = () => {
     return (
       <>
-        <label htmlFor="" className="forms-label">
+        <label htmlFor="text" className="forms-label">
+          <u>name</u>
+        </label>
+
+        <input type="text" name="" id="" className="form-content" />
+      </>
+    );
+  };
+
+  const result = value.map((item, index) => {
+    return (
+      <>
+        <label htmlFor="text" className="forms-label">
           {item}
         </label>
 
         <input
-          type="text"
+          type={index}
           name=""
           id=""
           placeholder={`digite o seu ${item}`}
@@ -125,6 +137,57 @@ const Form = ({ init, mid, low, extra }) => {
       </>
     );
   });
+  const FormComponent = () => {
+    return (
+      <>
+        <div>
+          <p className="register">
+            <strong>Register</strong>
+          </p>
+
+          <form action="submit">
+            <label htmlFor="text" className="forms-label">
+              {init}
+            </label>
+            <input type="name" name="name" id="name" className="form-content" />
+            <label htmlFor="text" className="forms-label">
+              {mid}
+            </label>
+            <input
+              type="lastName"
+              name="lastName"
+              id="lastName"
+              className="form-content"
+            />
+            <label htmlFor="text" className="forms-label">
+              {low}
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              className="form-content"
+            />{" "}
+            <label htmlFor="text" className="forms-label">
+              {extra}
+            </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              className="form-content"
+            />
+          </form>
+
+          <button className="button organize" onSubmit={true}>
+            <p className="registre-se ">
+              <strong>lorem ipsum</strong>
+            </p>
+          </button>
+        </div>
+      </>
+    );
+  };
 
   return (
     <>
@@ -134,12 +197,6 @@ const Form = ({ init, mid, low, extra }) => {
             <strong>Register</strong>
           </p>
           {result}
-
-          <button className="button organize" onSubmit={true}>
-            <p className="registre-se ">
-              <strong>lorem ipsum</strong>
-            </p>
-          </button>
         </div>
       </div>
     </>

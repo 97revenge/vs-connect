@@ -5,6 +5,7 @@ import Services from "./components/Services/Services";
 import Error from "./components/Error/Error";
 
 import { Router, Route } from "tiger-router";
+import Playground from "./components/Playground";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/services" Component={Services} />
       <Route path="/register" Component={Register} />
       <Route path="/login" Component={Login} />
+      <Route path="/playground" Component={Playground} />
     </Router>
 
     // <>

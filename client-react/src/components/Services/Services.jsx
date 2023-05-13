@@ -1,13 +1,11 @@
 import "./index.css";
 import { Nav } from "../Home/Home";
 
-const CardContent = () => {
+const Card = () => {
   return (
     <>
-      <div className="card-content">
-        <p className="p-title">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
+      <div className="main-content">
+        <p className="title">lorem ipsum</p>
       </div>
     </>
   );
