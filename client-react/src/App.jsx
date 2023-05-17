@@ -7,7 +7,7 @@ import Error from "./components/Error/Error";
 import { Router, Route } from "tiger-router";
 import Playground from "./components/Playground";
 
-function App() {
+export default function App() {
   return (
     <Router defaultComponent={Error}>
       <Route path="/home" Component={Home} />
@@ -16,12 +16,5 @@ function App() {
       <Route path="/login" Component={Login} />
       <Route path="/playground" Component={Playground} />
     </Router>
-
-    // <>
-    //   <Home />
-    //   <Services />
-    // </>
   );
 }
-
-export default App;

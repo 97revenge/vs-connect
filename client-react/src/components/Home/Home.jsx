@@ -4,7 +4,6 @@ import i18nextProvider, {
 import enHomeTranslation from "../../../locales/en/enHomeTranslation.json";
 import ptHomeTranslation from "../../../locales/pt/ptHomeTranslation.json";
 import "./index.css";
-import "./index.css";
 import { Link } from "tiger-router";
 i18nextProvider(enHomeTranslation, ptHomeTranslation);
 
@@ -106,11 +105,15 @@ export const Nav = () => {
   return (
     <div className="nav">
       <div className="navbar-buttons">
-        <div className="frame-1">
-          <h1 className="inicio">
-            <Link to="/home">{callbackStatic("inicio")}</Link>
-          </h1>
-        </div>
+        <details className="frame-1">
+          <summary className="inicio">Language</summary>
+          <div>
+            <button> 🇺🇸</button>
+          </div>
+          <div>
+            <button> 🇧🇷</button>
+          </div>
+        </details>
         <div className="frame-2">
           <h1 className="servicos">
             <Link to="/services">{callbackStatic("servicos")}</Link>

@@ -1,14 +1,109 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM Plex Sans:wght@400;700&display=swap");
 
-.p-title {
-  justify-content: center;
+.group-cards-high {
+  /* group-14 */
+  display: flex;
+  align-items: flex-end;
+  /* width: 1198px; */
+  /* height: 774px; */
+  padding: 15px 15px 10px 50px;
+
+  border-radius: 20px;
+  box-sizing: border-box;
+  /* background-color: rgba(234, 228, 228, 0.35); */
 }
 
-.main-content {
+.group-cards-low {
+  /* group-14 */
+  display: flex;
+  align-items: flex-end;
+
+  padding: 0px 0px 0px 50px;
+
+  border-radius: 20px;
+  box-sizing: border-box;
+  /* background-color: rgba(234, 228, 228, 0.35); */
+}
+
+.card-row {
+  /* group-11 */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.section-cards {
+  /* group-465 */
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  box-sizing: border-box;
+  gap: 14px;
+}
+
+.card-one {
+  /* main-content */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 12px;
+  width: 281px;
+  height: 251px;
+  padding: 22px;
+  border: 1px solid rgba(172, 192, 206, 1);
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: rgba(246, 249, 249, 1);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.title-card {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 11rem;
+  top: 5px;
+  padding: 20px 10px;
+  font-size: 2rem;
+}
+
+.title {
+  color: rgba(46, 51, 51, 1);
+  font-size: 19px;
+  line-weight: 189%;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+}
+
+.description {
+  color: rgba(46, 51, 51, 1);
+  font-size: 16px;
+  line-height: 150%;
+  font-family: IBM Plex Sans, sans-serif;
+  font-weight: 400;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 4px 16px;
+  border-radius: 40px;
+  box-sizing: border-box;
+  background-color: rgba(184, 236, 180, 1);
+}
+
+.wip {
+  color: rgba(59, 96, 133, 1);
+  font-size: 15px;
+  line-height: 12px;
+  font-family: IBM Plex Sans, sans-serif;
+  font-weight: 700;
 }

@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import "./index.css";
+import { Nav } from "../Home/Home";
 
 const CardGroupRight = () => {
   return (
@@ -227,19 +227,11 @@ const RegisterCardContent = () => {
   );
 };
 
-const RegisterNav = () => {
-  return (
-    <>
-      <div className="new-nav"></div>
-    </>
-  );
-};
-
 export default function Register() {
   return (
     <>
-      <div>
-        <RegisterNav />
+      <div className="app">
+        <Nav />
       </div>
       <div>
         <RegisterCardContent />
