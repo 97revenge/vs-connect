@@ -1,41 +1,18 @@
-
-
-document.querySelector('#app').innerHTML = `
-  <div>
-ok
-  </div>
-`
+import styleModel from "./src/components/styleModel";
 
 
 
-class WebHeader extends HTMLElement {
-  constructor(){
-    super(); 
 
+document.body.append(styleModel()); 
 
-    const div = document.createElement("div");
-    div.classList.add("container"); 
-   
-
-    document.body.appendChild(div);
-
-  }
-
-
+  function header () {
+  const posicionamentoHeader = document.getElementsByClassName("posicionamento_header");
+ return posicionamentoHeader;
 }
-customElements.define("web-header", WebHeader); 
+header(); 
 
-
-
-function webHeader () {
-
-  const div = document.createElement("div");
-  div.classList.add("container"); 
-  div.innerHTML = `Hello World`
-  return document.body.appendChild(div)
-
-
-  
+function banner() {
+  const banner = document.getElementsByClassName("banner"); 
+  return banner; 
 } 
-
-webHeader(); 
+banner();
