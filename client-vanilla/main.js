@@ -1,18 +1,15 @@
-import styleModel from "./src/components/styleModel";
+document.body.append(styleModel());
 
-
-
-
-document.body.append(styleModel()); 
-
-  function header () {
-  const posicionamentoHeader = document.getElementsByClassName("posicionamento_header");
- return posicionamentoHeader;
+function header() {
+  const posicionamentoHeader = document.getElementsByClassName(
+    "posicionamento_header"
+  );
+  return posicionamentoHeader;
 }
-header(); 
+header();
 
 function banner() {
-  const banner = document.getElementsByClassName("banner"); 
-  return banner; 
-} 
+  const banner = document.getElementsByClassName("banner");
+  return banner;
+}
 banner();
