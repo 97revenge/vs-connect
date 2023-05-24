@@ -3,6 +3,7 @@
     header: () => {
       const header = document.createElement("header");
       header.setAttribute("namespace", "headerElement");
+      header.setAttribute("style", "background-color:#060821 ");
       document.body.appendChild(header);
     },
 
@@ -66,6 +67,52 @@
       const section = document.querySelector("section");
       section.appendChild(bannerContent);
     },
+    LinkSlogan: () => {
+      const p = document.createElement("p");
+      const banner = document.querySelectorAll("div").item(1);
+      p.classList.add("banner_slogan_1");
+      p.innerText = `VS CONNECT 🚀`;
+      banner.appendChild(p);
+    },
+    description: () => {
+      const p = document.createElement("p");
+      const banner = document.querySelectorAll("div").item(1);
+      p.classList.add("banner_slogan_2");
+      p.innerHTML = `Conectando os melhores
+                           desenvolvedores independentes às mais diversas
+                           oportunidades.`;
+      banner.appendChild(p);
+    },
+    span: () => {
+      const span = document.createElement("span");
+      span.classList.add("banner_slogan_3");
+      span.innerHTML = `Conecte-se e comece a desvendar
+                                 esse mundo!`;
+      const banner = document.querySelectorAll("div").item(1);
+      banner.appendChild(span);
+    },
+    bannerButtons: () => {
+      const bannerContent = document.querySelectorAll("div").item(1);
+      const div = document.createElement("div");
+      div.classList.add("banner_botoes");
+      bannerContent.appendChild(div);
+    },
+    bannerLink: () => {
+      const link = document.createElement("button");
+      const bannerContent = document.querySelectorAll("div").item(2);
+
+      const linkDev = link.cloneNode(true);
+      console.log(linkDev);
+      linkDev.innerHTML = `Desenvolvedor`;
+      linkDev.setAttribute("class", "botao banner_botao_dev");
+      bannerContent.appendChild(linkDev);
+
+      const linkClient = link.cloneNode(true);
+      console.log(linkClient);
+      linkClient.innerHTML = `Cliente`;
+      linkClient.setAttribute("class", "botao banner_botao_cliente");
+      bannerContent.appendChild(linkClient);
+    },
   };
 
   const structure = {
@@ -81,6 +128,11 @@
       title: mainElement.title(),
       section: mainElement.section(),
       bannerContent: mainElement.bannerContent(),
+      LinkSlogan: mainElement.LinkSlogan(),
+      description: mainElement.description(),
+      span: mainElement.span(),
+      bannerButtons: mainElement.bannerButtons(),
+      bannerLink: mainElement.bannerLink(),
     },
   };
 
