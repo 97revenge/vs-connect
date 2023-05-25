@@ -4,16 +4,28 @@
   box-sizing: border-box;
 }
 
-:build {
+p {
+  font-family: "Righteous", cursive;
+  font-weight: medium;
+}
+
+span {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+}
+
+:root {
   --azul: #060821;
   --rosa: #c12d6d;
   --branco: #ffffff;
   --azulC: #0c7faf;
+  --azulCard: #182246;
 
   --font1: "Righteous", cursive;
   --font2: "Titillium Web", sans-serif;
 }
-.header {
+
+header {
   background-color: var(--azul);
 }
 
@@ -27,7 +39,7 @@
   height: 80px;
 }
 
-posicionamento_header img {
+.posicionamento_header img {
   width: 250px;
 }
 
@@ -110,6 +122,7 @@ h1 {
 }
 
 .botao {
+  padding: 11px 110px;
   font-family: var(--font1);
   color: var(--branco);
   text-transform: uppercase;
@@ -146,34 +159,109 @@ h1 {
   top: -60px;
 }
 
-.clientes {
+.clientes,
+.desenvolvedores {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 100px;
 }
 
-.cliente_conteudo img {
+.cliente_conteudo img,
+.dev_conteudo img {
   width: 500px;
 }
 
-.h2 {
+h2 {
   font-family: var(--font1);
   font-size: 30px;
   text-transform: uppercase;
 }
 
-.clientes_botao {
-  backgound-color: linear-gradient(0deg, #fffff);
-  padding: 11px 50px;
+main li {
+  text-transform: uppercase;
+  font-family: var(--font2);
+  font-size: 22px;
+  margin: 10px 0;
 }
 
-.cliente_conteudo ul {
+.clientes_botao:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    linear-gradient(92.23deg, #ff398f -25.96%, #17bbff 126.83%);
+}
+
+.cliente_conteudo ul,
+.dev_conteudo ul {
   margin: 50px 0;
 }
 
-.#cliente_conteudo {
+.cliente_conteudo,
+.dev_conteudo {
   display: flex;
   justify-content: space-around;
   width: 85%;
+}
+
+.paralax {
+  background-image: url(../img/maos_connect.png);
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.dev_conteudo a {
+  border: 4px solid var(--rosa);
+  background: linear-gradient(
+    272.99deg,
+    rgba(7, 12, 71, 0.55) 0%,
+    rgba(7, 12, 71, 0.7) 100%
+  );
+  padding: 7px 46px;
+}
+
+.desenvolvedores {
+  padding-top: 100px;
+}
+
+.card {
+  width: 400px;
+  height: 350px;
+  color: var(--branco);
+  background-color: var(--azulCard);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  padding: 80px 50px 50px 50px;
+  position: relative;
+}
+
+.servicos_cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.servicos {
+  padding-bottom: 150px;
+}
+
+.card img {
+  position: absolute;
+  top: -30px;
+  width: 120px;
+}
+
+.footer {
+  background-image: url(./img/background_footer.png);
+  height: calc(400px);
+  color: var(--branco);
+  font-family: var(--font2);
+  display: flex;
+  align-items: center;
 }
