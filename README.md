@@ -48,6 +48,38 @@ A melhor forma de trabalhar com namespaces em JavaScript depende muito do contex
 ##### - Programacao imperativa . 
 ##### - Duplicação de código . 
  
-Para um nivel mais intermediários, a simulação de namespaces com objetos e a utilização de padrões de design podem ser incrível para organizar e estruturar o código. e pensando em um codigo em longo prazo avançados, o encapsulamento de funções pode fazer o codigo ótimo para testes e refatoração . 
+Para um nivel mais intermediários, a simulação de namespaces com objetos e a utilização de padrões de design podem ser incrível para organizar e estruturar o código. e pensando em um codigo em longo prazo avançados, o encapsulamento de funções pode fazer o codigo ótimo para testes e refatoração .
+
+## Rodando localmente
+
+Clone o projeto diretamente da branch `senai-layout`
+
+```bash
+  git clone https://github.com/97revenge/vs-connect/tree/senai-layout -b senai-layout
+```
+
+Entre no diretório do projeto
+
+```bash
+  cd vs-connect/client-vanilla
+```
+
+Instale as dependências (por motivo de produtividade estou usando [vite](https://vitejs.dev/guide/))
+
+```bash
+  npm install
+```
+
+dev
+
+```bash
+  npm run dev
+```
+
+acesso a url 
+```bash
+  http://localhost:[url]/ 
+```
+ 
 
 > use o comando `gitk` para melhor análise. 
