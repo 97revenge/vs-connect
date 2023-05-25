@@ -55,7 +55,7 @@ Para um nivel mais intermediários, a simulação de namespaces com objetos e a 
 Clone o projeto diretamente da branch `senai-layout`
 
 ```bash
-  git clone https://github.com/97revenge/vs-connect/tree/senai-layout -b senai-layout
+  git clone https://github.com/97revenge/vs-connect/ -b senai-layout
 ```
 
 Entre no diretório do projeto
