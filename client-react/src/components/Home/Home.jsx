@@ -102,16 +102,18 @@ export const CardContent = () => {
   );
 };
 export const Nav = () => {
+  const lang = document.querySelector("html");
+
   return (
     <div className="nav">
       <div className="navbar-buttons">
         <details className="frame-1">
           <summary className="inicio">Language</summary>
           <div>
-            <button> 🇺🇸</button>
+            <button onClick={() => lang.setAttribute("lang", "en")}> 🇺🇸</button>
           </div>
           <div>
-            <button> 🇧🇷</button>
+            <button onClick={() => lang.setAttribute("lang", "pt")}> 🇧🇷</button>
           </div>
         </details>
         <div className="frame-2">
